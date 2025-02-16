@@ -6,6 +6,11 @@ ul{
     list-style: none;
 }
 header{
+    position: absolute;
+    left: 0;
+    right: 0;
+    align-content: center;
+    top: 20px;
     display: flex;
     justify-content: space-between;
     width: 80%;
@@ -15,6 +20,7 @@ header{
     border-radius: 99px;
     padding: 5px;
     box-shadow: 0 4px 4px #0000004a;
+    z-index: 2;
 }
 nav{
     margin-left: 20px;
@@ -56,5 +62,44 @@ header nav ul li:hover{
 }
 /* hero section */ 
 section.hero{
+    overflow: hidden;
+    background-image: url("https://s3-alpha-sig.figma.com/img/d8ca/ce05/bc4aae8179f8ab13dc19d2850c982dea?Expires=1740355200&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=UyoOJ-Sx3BGgLmw9Gy5C0mHd~p0t6-znSwE9stmAyWqEGhqNIODW2l9zIcEpZbZwwW0zjssBXmQyWouKu2KQ~7E57h9dm86oGHzaVwXl~psX8iqRZqJGLBasXOHKxnIrrK2r0e-9090s48UChXZ1a8l5ssr5pFo1CXI40pJpUdU5MOsCsEBjC2x7XJ3FrAKL2rdhOsgC7jD4LWGQNcS2rSbhUKf8HpfYS~MwahsMglC5hnJszYBW13Rny7DP3rrsmhkNdAZxPo5pD2n1i7w~1NXRm4yyDbtP43xlMZ6i18fZ~QloeE~Azo9ujqa0~y2WXs1i4n2RyJ4e~ydXWNURmg__");
+    height: 170vh;
+    background-size: cover;
+    display: flex;
+    transform: scale(1.0);
+    z-index: 1;
+    
     
 }
+#article-section{
+    width: 1,440px;
+    height: 579px;
+    background-color: #131D24;
+}
+.articles{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+
+
+}
+.first-article{
+    width: 237.33px;
+    height: 150px;
+    margin-top: 100px;
+}
+h1{
+    font-family: Fell English
+}
+.second-article{
+    width: 237.33px;
+    height: 150px;
+}
+.third-article{
+    width: 237.33px;
+    height: 150px;
+}
+
+    

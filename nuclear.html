@@ -4,32 +4,38 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="nuclear.css?version=1" type="text/css">
-
-   </head>
+</head>
     <body>
         <header>
             <h1>Vaccination Timeline</h1>
-            
             <nav>
                 <ul>
-                    <li class="type">Kids
+                    <li class="type" id="kids-btn">Kids
                         <span class="shape"></span>
                     </li>
-                    <li class="type">Women
+                    <li class="type" id="women-btn">Women
                         <span class="shape1"></span>
                     </li>
-                    <li class="type">Men
+                    <li class="type" id="men-btn">Men
                         <span class="shape2"></span>
                     </li>
                 </ul>
             </nav>
+       
         </header>
+        <section class="papiloma">
+            <nav class="virus-section">
+             <ul>
+                 <li>Papilloma</li>
+                 <li id="dif-color-item">Grippe</li>
+                 <li>Grippe</li>
+             </ul>
+            </nav>
+         </section>
         <main>
+
             <div class="center-wrapper">
-                <span class="main-line">
-                    
-                </span>
-               
+                <span class="main-line"></span>
             </div>
             <div class="img-wrapper">
                 <img src="C:\Users\User\Desktop\Mark-up-projects10x\Group 48095443.png" alt="">
@@ -37,6 +43,21 @@
                 <img src="C:\Users\User\Desktop\Mark-up-projects10x\Group 48095444.png" alt="">
                 <img src="C:\Users\User\Desktop\Mark-up-projects10x\Group 48095444.png" alt="">
                 <img src="C:\Users\User\Desktop\Mark-up-projects10x\Group 48095444.png" alt="">
+            </div>
+            <div class="vaccination-logo-wrapper">
+                <div class="logo-item">
+                  <img src="C:\Users\User\Desktop\cxrili.png" alt="">
+                  <span class="logo-text">- Screening</span>
+                </div>
+                <div class="logo-item">
+                  <img src="C:\Users\User\Desktop\vac.png" alt="">
+                  <span class="logo-text">- Vaccination</span>
+
+                </div>
+              </div>
+            </div>
+            <div id="dynamic-content">
+               <!-- This content will be updated and shown when a button is clicked -->
             </div>
         </main>
     </body>

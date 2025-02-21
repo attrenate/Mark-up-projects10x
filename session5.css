@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=IM+Fell+English&display=swap');
 *{
     margin: 0;
     padding: 0;
@@ -36,7 +37,7 @@ span.separator{
     height: 18px;
     background-color: #b58a4e;
     transition: .2s ease-in-out;
-    
+    z-index: 2;
 }
 header nav ul li{
     font-size: 12px;
@@ -69,37 +70,63 @@ section.hero{
     display: flex;
     transform: scale(1.0);
     z-index: 1;
-    
-    
 }
 #article-section{
     width: 1,440px;
     height: 579px;
     background-color: #131D24;
+    z-index: 1;
 }
 .articles{
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
-  
-
-
-}
-.first-article{
-    width: 237.33px;
-    height: 150px;
-    margin-top: 100px;
+    width: 90%;
+    margin-left: 7rem;
 }
 h1{
-    font-family: Fell English
-}
-.second-article{
+    margin-top: 100px;
+    font-family: 'IM Fell English', serif;
+    color: #EEF4F8; 
     width: 237.33px;
     height: 150px;
 }
-.third-article{
-    width: 237.33px;
-    height: 150px;
+.separator-1{
+    margin: 0 20px;
+    width: 2px;
+    height: 100%;
+    color: #232D33;
+    flex-shrink: 0;
+}
+.articles > div {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    text-align: center;
+    width: 30%; 
 }
 
-    
+.articles > div:not(:last-child)::after {
+    content: "";
+    position: absolute;
+    right: -20px; 
+    top: 7rem;
+    width: 2px; 
+    height: 379px; 
+    background-color: #232D33; 
+}
+h2{
+    font-family: 'IM Fell English', serif;
+    color: #79969C;
+    font-size: 14px;
+    transform: translateY(-4rem);
+    font-weight: 400;
+}
+.articales-p{
+    font-family: 'IM Fell English', serif;
+    font-weight: 400;
+    font-size: 12px;
+    color: #586061;
+    transform: translateY(-2rem);
+}

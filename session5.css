@@ -3,6 +3,9 @@
     margin: 0;
     padding: 0;
 }
+body{
+    font-family: 'IM Fell English', serif;
+}
 ul{
     list-style: none;
 }
@@ -18,7 +21,7 @@ header{
     background: linear-gradient(#FAEACA, #EFCFACA4);
     margin: 0 auto;
     height: 44px;
-    border-radius: 99px;
+    border-radius: 6.1875rem;
     padding: 5px;
     box-shadow: 0 4px 4px #0000004a;
     z-index: 2;
@@ -71,8 +74,9 @@ section.hero{
     transform: scale(1.0);
     z-index: 1;
 }
+/* style for sections which has articales */
 #article-section{
-    width: 1,440px;
+    width: 100%;
     height: 579px;
     background-color: #131D24;
     z-index: 1;
@@ -130,3 +134,169 @@ h2{
     color: #586061;
     transform: translateY(-2rem);
 }
+/* css for new section (arcane-academy section) */
+.arcane-academy {
+    position: relative; 
+    width: 100%;
+    height: 588px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.castle{ 
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    overflow: hidden;
+}
+h3{
+    font-family: 'IM Fell English', serif;
+    font-size: 36px;
+    font-weight: 400;
+    color: #EEF4F8;
+    line-height: 45.67px;
+    z-index: 3;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); 
+    text-align: center;
+    width: 100%; 
+}
+.arcane-button1{
+    position: absolute;
+    text-align: center;
+    color: #4A3211;
+    font-family: 'IM Fell English', serif;
+    font-weight: 400;
+    font-size: 12px;
+    background-color: #FAEACA;
+    border: none;
+    border-radius: 6.1875rem;
+    width: 138px;
+    height: 34px;
+    z-index: 3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 9rem;
+    margin-right: 5rem;
+    cursor: pointer;
+}
+.arcane-button2{
+    position: absolute;
+    text-align: center;
+    color: #D6F2EC;
+    font-family: 'IM Fell English', serif;
+    font-weight: 400;
+    font-size: 12px;
+    background-color: #5F888A;
+    border: none;
+    border-radius: 0 6.1875 6.1875 6.1875rem;
+    width: 138px;
+    height: 34px;
+    z-index: 4;
+    display: flex;
+    justify-content: center;
+    overflow: visible;
+    align-items: center;
+    margin-top: 9rem;
+    margin-left: 9.5rem;
+    cursor: pointer;
+    clip-path: none !important;
+    box-sizing: border-box !important;
+}
+/* css for new section - 'powers' */ 
+.powers{
+    width: 100%;
+    height: 595px;
+    background-color: #131D24;
+}
+.content-wrapper{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-content: center;
+    gap: 7.5rem;
+}
+.harry-potter-wanna-be{
+    display: flex;
+    margin-top: 7rem;
+}
+h4{
+    margin-top: 10rem;
+    color: #EEF4F8;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 30.45px;
+}
+.powers-p{
+    margin-top: 4rem;
+    color: #EEF4F8;
+    font-size: 12px;
+    line-height: 15.22px;
+}
+.book{
+    color: #503817;
+    background-color: #EFCFA4;
+    font-family: 'IM Fell English', serif;
+    border-radius: 6.1875rem;
+    height: 2.125rem;
+    width: 9.5rem;
+    cursor: pointer;
+    margin-top: 3rem;
+}
+footer{
+    width: 100%;
+    height: 20rem;
+    background-color: #EFCFA4;
+    display: flex;
+    
+}
+h5{
+    color: #4A3211;
+    font-weight: 400;
+    font-size: 1.5rem;
+}
+.footer-text-wrapper{
+    display: flex;
+    justify-content: space-between;
+    gap: 10rem;
+    margin: 3rem;
+}
+#ul{
+    margin-top: 3rem;
+}
+.footer-list{
+    color: #4A3211;
+    font-size: 0.75rem;
+}
+.aside-pic{
+    margin-left: 30rem;
+    margin-top: 1rem;
+}
+.last-sec{
+    width: 100%;
+    height: 4.0625rem;
+    background-color: #131D24;
+}
+.text1-wrapper{
+    color: #EEF4F8;
+    font-size: 0.75rem;
+    display: flex;
+    gap: 1rem;
+}
+#text{
+    margin-top: 1rem;
+}
+address{
+    color: #EEF4F8;
+    display: flex;
+    justify-content: flex-end;
+    font-size: 0.75rem;
+}
+
+   

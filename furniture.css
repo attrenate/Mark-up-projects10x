@@ -1,0 +1,138 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+/* css for the header */
+header{
+   background-image: url('file:///C:/Users/User/Desktop/photos-for-projects/Rectangle%201441.png');
+    background-size: cover; 
+    background-position: center; 
+    height: 150vh;
+    background-position: 0 0;
+}
+li{
+    list-style: none;
+}
+h5{
+    position: absolute;
+    color: #FFFFFF;
+    font-family: 'Gilroy', sans-serif;
+    line-height: 2.05rem;
+    font-size: 1.75rem;
+    width:  4.875rem;
+    height:  2.1875rem;
+    margin-left: 5rem;
+    margin-top: 2.5rem;
+}
+.header-list-wrapper{
+    display: flex;
+    justify-content: center;
+}
+#list-wrapper{
+    display: flex;
+    gap: 2rem;
+    margin-top: 2rem;
+}
+.nav-item{
+    color: #FFFFFF;
+    font-family: 'Gilroy', sans-serif;
+    font-size: 1rem;
+    line-height: 1.318125rem;
+}
+.bag-icon{
+    margin-left: 90rem ;
+}
+h1{
+    color: #FFFFFF;
+    font-family: 'Gilroy', sans-serif;
+    font-size: 5rem;
+    display: flex;
+    justify-self: center;
+    margin-top: 3rem;
+    text-align: center;
+}  
+h2{
+    color: #FFFFFF;
+    font-family: 'Gilroy', sans-serif;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-top: 2rem;
+}
+.search-container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+}
+
+#search-bar {
+    height: 3.5rem;
+    background-color: #FFFFFF26;
+    border-radius: 2.625rem;
+    border-color: #FFFFFF99;
+    width: 21.5rem;
+    padding: 0 2rem 0 2rem; 
+    font-family: 'Gilroy', sans-serif;
+    font-size: 1.1rem;
+}
+
+#search-bar::placeholder {
+    font-size: 1.1rem;
+    font-family: 'Gilroy', sans-serif;
+}
+
+.search-button {
+    position: absolute;
+    right: 0.7rem; 
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: #E58411;
+    border-radius: 50%;
+    border-color: #E58411;
+    width: 2.5rem;
+    height: 2.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    border: none; 
+    margin-right: 37rem;
+}
+
+.search-button:hover {
+    background-color: #d4730c;
+}
+.circle1{
+    margin-top: 16em;
+    margin-left: 7rem
+}
+.circle2{
+    margin-left: 9rem;
+}
+.circle3{
+    margin-left: 70rem;
+    margin-top: 10rem;
+}
+/* css for the section called "reasons" */
+#reasons{
+    width: 100%;
+    height: 75vh;
+}
+h3{
+    position: absolute;
+    margin-top: 20rem;
+    font-family: 'Gilroy', sans-serif;
+    color: #1E1E1E;
+    height: 6.5rem;
+    width: 15.125rem;
+    font-size: 2.625rem;
+}
+.title{
+    margin-top: 20rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+    
+  

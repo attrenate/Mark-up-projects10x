@@ -13,7 +13,7 @@ header{
 li{
     list-style: none;
 }
-h5{
+#h5{
     position: absolute;
     color: #FFFFFF;
     font-family: 'Gilroy', sans-serif;
@@ -117,16 +117,16 @@ h2{
 /* css for the section called "reasons" */
 #reasons{
     width: 100%;
-    height: 10rem;
 }
 h3{
-    
+    margin-right: 3rem;
     margin-top: 20rem;
     font-family: 'Gilroy', sans-serif;
     color: #1E1E1E;
     height: 6.5rem;
     width: 15.125rem;
     font-size: 2.625rem;
+    margin-left: 3rem; 
 }
 .article-wrapper{
     display: flex;
@@ -135,20 +135,75 @@ h3{
     margin: 0 auto;
     left: 0;
     right: 0;
-    margin-bottom: 10rem;
     gap: 8rem;
+    align-items: flex-end;
+    margin-top: 4rem;
 }
 h4{
     font-family: 'Gilroy', sans-serif;
     color: #1E1E1E;
     height: 1.9rem;
     width: 10.75rem;
-
 }
 .article-p{
     text-align: start;
     height: 5.625rem;
     color: #1E1E1E;
 }
-    
-  
+.p-arrow{
+    color: #E58411;
+    margin-top: 1rem;
+    font-family: 'Gilroy', sans-serif;
+    cursor: pointer;
+}
+.arrow{
+    margin-top: 0.5rem;
+    cursor: pointer;
+}   
+/* css for new section (products) */
+.products{
+    width: 100%;
+    height: 56.625rem;
+}
+h6{
+    margin-top: 3rem;
+    font-family: 'Gilroy', sans-serif;
+    color: #1E1E1E;
+    display: flex;
+    justify-self: center;
+    font-size: 2.625rem;
+}
+.button-holder{
+    background-color: #EEEEEE;
+    width: 21.75rem;
+    height: 3rem;
+    border-radius: 2.7rem;
+    border-color: #EEEEEE;
+    cursor: pointer;
+    display: flex;
+    justify-self: center;
+    margin-top: 2rem;
+}
+.inside-button-wrapper{
+    display: flex;
+    justify-content: center; 
+    align-items: center;      
+    width: 100%;              
+    height: 100%;             
+}  
+.inside-buttons{
+    background-color: #EEEEEE;
+    border-color: #EEEEEE;
+    border-radius: 2rem;
+    width: 5.25rem;
+    height: 2.8125rem;
+    cursor: pointer;
+}   
+.inside-buttons:hover{
+    background-color: #FFFFFF;
+    cursor: pointer;
+}
+.chairs-wrapper{
+    display: flex;
+    justify-content: space-around;
+}   

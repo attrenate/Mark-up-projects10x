@@ -206,4 +206,53 @@ h6{
 .chairs-wrapper{
     display: flex;
     justify-content: space-around;
+    margin-top: 5rem;
 }   
+.chair1, .chair2, .chair3, .chair4{
+    cursor: pointer;
+}
+.chair-writing-wrapper{
+    display: flex;
+    justify-content: space-around;
+}
+.chair-writing{
+    color: #8D8D8D;
+    font-family: 'Gilroy', sans-serif;
+    font-size: 1rem;
+}
+.chair-title-wrapper{
+    display: flex;
+    justify-content: space-around;
+}
+.chair-title{
+    color: #0D1B39;
+    font-size: 1.3rem;
+    font-weight: 600;
+}
+.stars-wrapper{
+    display: flex;
+    justify-content: space-around;
+}
+.price-tags{
+    display: flex;
+    justify-content: space-around;
+}
+.price{
+    display: flex;
+    gap: 3rem;
+}
+.plus{
+    cursor: pointer;
+}
+.view-all1{
+    margin-top: 8rem;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    color: #E58411;
+    font-family: 'Gilroy', sans-serif;
+    cursor: pointer;
+}
+   
+    
+    

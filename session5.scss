@@ -1,0 +1,241 @@
+@import url('https://fonts.googleapis.com/css2?family=IM+Fell+English&display=swap');
+
+// Variables
+$font-main: 'IM Fell English', serif;
+$color-primary: #FAEACA;
+$color-secondary: #EFCFA4;
+$color-accent: #A9896D;
+$color-dark: #131D24;
+$color-text-light: #EEF4F8;
+$color-text-accent: #4A3211;
+$color-button-primary: #9BB6B3;
+$color-button-secondary: #5F888A;
+$spacing-large: 20px;
+$border-radius: 6.1875rem;
+
+// Mixins
+@mixin flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin button-style($bg-color, $text-color) {
+  background: $bg-color;
+  color: $text-color;
+  border: none;
+  border-radius: $border-radius;
+  width: 138px;
+  height: 34px;
+  cursor: pointer;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: $font-main;
+}
+
+ul {
+  list-style: none;
+}
+
+header {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: $spacing-large;
+  @include flex-center;
+  justify-content: space-between;
+  width: 80%;
+  background: linear-gradient($color-primary, rgba($color-secondary, 0.65));
+  margin: 0 auto;
+  height: 44px;
+  border-radius: $border-radius;
+  padding: 5px;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.29);
+  z-index: 2;
+}
+
+nav {
+  margin-left: $spacing-large;
+  ul {
+    @include flex-center;
+    padding: 13px;
+  }
+}
+
+span.separator {
+  margin: 0 $spacing-large;
+  width: 1px;
+  height: 18px;
+  background-color: #b58a4e;
+  transition: 0.2s ease-in-out;
+}
+
+header nav ul li {
+  font-size: 12px;
+  color: $color-accent;
+  &:hover {
+    color: $color-text-accent;
+    cursor: pointer;
+  }
+}
+
+.header-button {
+  @include button-style(linear-gradient($color-button-primary, $color-button-secondary), $color-text-light);
+  margin-top: 5px;
+  @include flex-center;
+}
+
+.button-text {
+  font-size: 14px;
+}
+
+// Hero Section
+section.hero {
+  overflow: hidden;
+  background-image: url('image-url');
+  height: 170vh;
+  background-size: cover;
+  display: flex;
+  transform: scale(1.0);
+}
+
+// Articles Section
+#article-section {
+  width: 100%;
+  height: 579px;
+  background-color: $color-dark;
+}
+
+.articles {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 90%;
+  margin-left: 7rem;
+  
+  > div {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 30%;
+    &:not(:last-child)::after {
+      content: "";
+      position: absolute;
+      right: -20px;
+      top: 7rem;
+      width: 2px;
+      height: 379px;
+      background-color: #232D33;
+    }
+  }
+}
+
+h1, h2, h3, h4, h5 {
+  font-family: $font-main;
+  color: $color-text-light;
+}
+
+.articales-p {
+  font-size: 12px;
+  color: #586061;
+}
+
+// Arcane Academy Section
+.arcane-academy {
+  position: relative;
+  width: 100%;
+  height: 588px;
+  @include flex-center;
+}
+
+.arcane-button1 {
+  @include button-style($color-primary, $color-text-accent);
+  margin-top: 9rem;
+  margin-right: 5rem;
+}
+
+.arcane-button2 {
+  @include button-style($color-button-secondary, $color-text-light);
+  margin-top: 9rem;
+  margin-left: 9.5rem;
+  border-radius: 0 $border-radius $border-radius $border-radius;
+}
+
+// Powers Section
+.powers {
+  width: 100%;
+  height: 595px;
+  background-color: $color-dark;
+}
+
+.content-wrapper {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  align-content: center;
+  gap: 7.5rem;
+}
+
+.book {
+  @include button-style($color-secondary, $color-text-accent);
+  height: 2.125rem;
+  width: 9.5rem;
+  margin-top: 3rem;
+}
+
+// Footer
+footer {
+  width: 100%;
+  height: 20rem;
+  background-color: $color-secondary;
+  display: flex;
+}
+
+.footer-list {
+  color: $color-text-accent;
+  font-size: 0.75rem;
+}
+
+// Responsive Design
+@media (max-width: 1024px) {
+  header {
+    flex-direction: column;
+    height: auto;
+    padding: 10px;
+  }
+  .articles {
+    flex-direction: column;
+    align-items: center;
+  }
+  .articles > div {
+    width: 90%;
+    margin-bottom: 30px;
+  }
+  section.hero {
+    height: auto;
+    padding: 50px 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  button {
+    padding: 10px 20px;
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  button {
+    padding: 8px 16px;
+    font-size: 12px;
+    font-family: 'Courier New', Courier, monospace;
+  }
+}

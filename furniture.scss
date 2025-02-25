@@ -1,14 +1,43 @@
+// Variables
+$primary-color: #E58411;
+$secondary-color: #1E1E1E;
+$text-color: #FFFFFF;
+$bg-light: #EEEEEE;
+$font-family: 'Gilroy', sans-serif;
+$border-radius: 2.625rem;
+
+// Mixins
+@mixin flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin flex-space-between {
+  display: flex;
+  justify-content: space-between;
+}
+
+@mixin button-style {
+  background-color: $bg-light;
+  border-radius: 2rem;
+  border: none;
+  cursor: pointer;
+}
+
+// Global Styles
 * {
   margin: 0;
   padding: 0;
 }
 
 body {
-  font-family: "Gilroy", sans-serif;
+  font-family: $font-family;
 }
 
+// Header
 header {
-  background: url("file:///C:/Users/User/Desktop/photos-for-projects/Rectangle%201441.png") center/cover;
+  background: url('file:///C:/Users/User/Desktop/photos-for-projects/Rectangle%201441.png') center/cover;
   height: 150vh;
 }
 
@@ -18,7 +47,7 @@ li {
 
 #h5 {
   position: absolute;
-  color: #FFFFFF;
+  color: $text-color;
   line-height: 2.05rem;
   font-size: 1.75rem;
   width: 4.875rem;
@@ -28,9 +57,7 @@ li {
 }
 
 .header-list-wrapper {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  @include flex-center;
 }
 
 #list-wrapper {
@@ -40,7 +67,7 @@ li {
 }
 
 .nav-item {
-  color: #FFFFFF;
+  color: $text-color;
   font-size: 1rem;
   line-height: 1.318125rem;
 }
@@ -50,7 +77,7 @@ li {
 }
 
 h1, h2 {
-  color: #FFFFFF;
+  color: $text-color;
   display: flex;
   justify-content: center;
   text-align: center;
@@ -65,19 +92,18 @@ h2 {
   margin-top: 2rem;
 }
 
+// Search Bar
 .search-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  @include flex-center;
   margin-top: 2rem;
   position: relative;
 }
 
 #search-bar {
   height: 3.5rem;
-  background-color: rgba(255, 255, 255, 0.15);
-  border-radius: 2.625rem;
-  border: 1px solid rgba(255, 255, 255, 0.6);
+  background-color: rgba($text-color, 0.15);
+  border-radius: $border-radius;
+  border: 1px solid rgba($text-color, 0.6);
   width: 21.5rem;
   padding: 0 2rem;
   font-size: 1.1rem;
@@ -88,20 +114,19 @@ h2 {
   right: 0.7rem;
   top: 50%;
   transform: translateY(-50%);
-  background-color: #E58411;
+  background-color: $primary-color;
   border-radius: 50%;
   width: 2.5rem;
   height: 2.5rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  @include flex-center;
   border: none;
   cursor: pointer;
-}
-.search-button:hover {
-  background-color: #b6690d;
+  &:hover {
+    background-color: darken($primary-color, 10%);
+  }
 }
 
+// Circles
 .circle1 {
   margin-top: 16em;
   margin-left: 7rem;
@@ -116,21 +141,21 @@ h2 {
   margin-top: 10rem;
 }
 
+// Reasons Section
 #reasons {
   width: 100%;
 }
 
 h3 {
   margin: 20rem 3rem 0 3rem;
-  color: #1E1E1E;
+  color: $secondary-color;
   height: 6.5rem;
   width: 15.125rem;
   font-size: 2.625rem;
 }
 
 .article-wrapper {
-  display: flex;
-  justify-content: space-between;
+  @include flex-space-between;
   width: 50rem;
   margin: 4rem auto 0 auto;
   gap: 8rem;
@@ -138,7 +163,7 @@ h3 {
 }
 
 h4 {
-  color: #1E1E1E;
+  color: $secondary-color;
   height: 1.9rem;
   width: 10.75rem;
 }
@@ -146,11 +171,11 @@ h4 {
 .article-p {
   text-align: start;
   height: 5.625rem;
-  color: #1E1E1E;
+  color: $secondary-color;
 }
 
 .p-arrow {
-  color: #E58411;
+  color: $primary-color;
   margin-top: 1rem;
   cursor: pointer;
 }
@@ -160,6 +185,7 @@ h4 {
   cursor: pointer;
 }
 
+// Products Section
 .products {
   width: 100%;
   height: 56.625rem;
@@ -167,41 +193,30 @@ h4 {
 
 h6 {
   margin-top: 3rem;
-  color: #1E1E1E;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  color: $secondary-color;
+  @include flex-center;
   font-size: 2.625rem;
 }
 
 .button-holder {
-  background-color: #EEEEEE;
-  border-radius: 2rem;
-  border: none;
-  cursor: pointer;
+  @include button-style;
   width: 21.75rem;
   height: 3rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  @include flex-center;
   margin-top: 2rem;
 }
 
 .inside-buttons {
-  background-color: #EEEEEE;
-  border-radius: 2rem;
-  border: none;
-  cursor: pointer;
+  @include button-style;
   width: 5.25rem;
   height: 2.8125rem;
-}
-.inside-buttons:hover {
-  background-color: #FFFFFF;
+  &:hover {
+    background-color: $text-color;
+  }
 }
 
 .chairs-wrapper, .chair-writing-wrapper, .chair-title-wrapper, .stars-wrapper, .price-tags {
-  display: flex;
-  justify-content: space-between;
+  @include flex-space-between;
   margin-top: 5rem;
 }
 
@@ -218,11 +233,9 @@ h6 {
 
 .view-all1 {
   margin-top: 8rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  @include flex-center;
   gap: 1rem;
-  color: #E58411;
+  color: $primary-color;
   cursor: pointer;
   font-size: 3rem;
-}/*# sourceMappingURL=furniture.css.map */
+}

@@ -197,45 +197,209 @@ h6 {
   @include flex-center;
   font-size: 2.625rem;
 }
-
-.button-holder {
-  @include button-style;
+button-holder{
+  background-color: #EEEEEE;
   width: 21.75rem;
   height: 3rem;
-  @include flex-center;
+  border-radius: 2.7rem;
+  border-color: #EEEEEE;
+  cursor: pointer;
+  display: flex;
+  justify-self: center;
   margin-top: 2rem;
 }
-
-.inside-buttons {
-  @include button-style;
+.inside-button-wrapper{
+  display: flex;
+  justify-content: center; 
+  align-items: center;      
+  width: 100%;              
+  height: 100%;             
+}  
+.inside-buttons{
+  background-color: #EEEEEE;
+  border-color: #EEEEEE;
+  border-radius: 2rem;
   width: 5.25rem;
   height: 2.8125rem;
-  &:hover {
-    background-color: $text-color;
-  }
+  cursor: pointer;
+}   
+.inside-buttons:hover{
+  background-color: #FFFFFF;
+  cursor: pointer;
 }
-
-.chairs-wrapper, .chair-writing-wrapper, .chair-title-wrapper, .stars-wrapper, .price-tags {
-  @include flex-space-between;
+.chairs-wrapper{
+  display: flex;
+  justify-content: space-around;
   margin-top: 5rem;
+}   
+.chair1, .chair2, .chair3, .chair4{
+  cursor: pointer;
 }
-
-.chair-writing {
+.chair-writing-wrapper{
+  display: flex;
+  justify-content: space-around;
+}
+.chair-writing{
   color: #8D8D8D;
+  font-family: 'Gilroy', sans-serif;
   font-size: 1rem;
 }
-
-.chair-title {
+.chair-title-wrapper{
+  display: flex;
+  justify-content: space-around;
+}
+.chair-title{
   color: #0D1B39;
   font-size: 1.3rem;
   font-weight: 600;
 }
-
-.view-all1 {
-  margin-top: 8rem;
-  @include flex-center;
-  gap: 1rem;
-  color: $primary-color;
-  cursor: pointer;
-  font-size: 3rem;
+.stars-wrapper{
+  display: flex;
+  justify-content: space-around;
 }
+.price-tags{
+  display: flex;
+  justify-content: space-around;
+}
+.price{
+  display: flex;
+  gap: 3rem;
+}
+.plus{
+  cursor: pointer;
+}
+.view-all1{
+  margin-top: 8rem;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  color: #E58411;
+  font-family: 'Gilroy', sans-serif;
+  cursor: pointer;
+}
+.photo-text-wrapper1{
+  @include flex-center();
+  gap: 8rem;
+  .orange-text{
+    font-family: $font-family;
+    color: $primary-color;
+    font-size: 1rem;
+  }
+  h5{
+    color: $secondary-color;
+    font-family: $font-family;
+    font-size: 2.625rem;
+    margin-top: 1rem;
+  }
+  .h5-text{
+    color: #1E1E1E;
+    opacity: 0.8;
+    margin-top: 1rem;
+    font-family: $font-family;
+  }
+}
+.photo-wrapper{
+  display: flex;
+  justify-content: flex-end;
+  .column{
+    display: flex;
+    flex-direction: column;
+  }
+}
+.photo-text-wrapper2{
+  @include flex-center();
+  gap: 2rem;
+  flex-direction: row-reverse;
+  .orange-text{
+    font-family: $font-family;
+    color: $primary-color;
+    font-size: 1rem;
+  }
+  h5{
+    color: $secondary-color;
+    font-family: $font-family;
+    font-size: 2.625rem;
+    margin-top: 1rem;
+  }
+  .h5-text{
+    color: #1E1E1E;
+    opacity: 0.8;
+    margin-top: 1rem;
+    font-family: $font-family;
+  }
+}
+ .testimonials{
+  margin-top: 5rem;
+  .orange-text-yet-again{
+    font-family: $font-family;
+    color: $primary-color;
+    font-size: 1rem;
+    display: flex;
+    justify-self: center;
+  }
+  .h7{
+    margin-top: 1rem;
+    font-family: $font-family;
+    color: $secondary-color;
+    display: flex;
+    justify-self: center;
+    font-size: 2.625rem;
+  }
+ }  
+ .Reviews-wrapper{
+  margin-top: 3rem;
+  @include flex-center();
+  gap: 2rem;
+ } 
+ footer{
+  .footer-wrapper{
+    @include flex-space-between();
+  }
+  .cont4{
+    display: flex;
+    flex-direction: column;
+  }
+  .panto{
+    font-family: $font-family;
+    color: $primary-color;
+    font-size: 1rem;
+    margin-top: 1rem;
+  }
+  .panto-text{
+    color: #1E1E1E;
+    opacity: 0.8;
+    margin-top: 3rem;
+    font-family: $font-family;
+  }
+  #orange{
+    font-family: $font-family;
+    color: $primary-color;
+    font-size: 1rem;
+  }
+  .orange{
+    font-family: $font-family;
+    color: $primary-color;
+    font-size: 1rem;
+  }
+  ul{
+    margin-top: 1rem;
+    display: flex;
+    gap: 1rem;
+    flex-direction: column;
+  }
+  li{
+    color: #1E1E1E;
+    opacity: 0.8;
+    font-family: $font-family;
+    cursor: pointer;
+    text-decoration: none;
+    transition: text-decoration 0.3s ease-in-out;
+  }
+  &:hover{
+    color: #8D8D8D;
+    text-decoration: underline;
+  }
+ }
+  
+  
+  

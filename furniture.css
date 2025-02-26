@@ -174,40 +174,64 @@ h6 {
   font-size: 2.625rem;
 }
 
-.button-holder {
+button-holder {
   background-color: #EEEEEE;
-  border-radius: 2rem;
-  border: none;
-  cursor: pointer;
   width: 21.75rem;
   height: 3rem;
+  border-radius: 2.7rem;
+  border-color: #EEEEEE;
+  cursor: pointer;
+  display: flex;
+  justify-self: center;
+  margin-top: 2rem;
+}
+
+.inside-button-wrapper {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 2rem;
+  width: 100%;
+  height: 100%;
 }
 
 .inside-buttons {
   background-color: #EEEEEE;
+  border-color: #EEEEEE;
   border-radius: 2rem;
-  border: none;
-  cursor: pointer;
   width: 5.25rem;
   height: 2.8125rem;
-}
-.inside-buttons:hover {
-  background-color: #FFFFFF;
+  cursor: pointer;
 }
 
-.chairs-wrapper, .chair-writing-wrapper, .chair-title-wrapper, .stars-wrapper, .price-tags {
+.inside-buttons:hover {
+  background-color: #FFFFFF;
+  cursor: pointer;
+}
+
+.chairs-wrapper {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   margin-top: 5rem;
+}
+
+.chair1, .chair2, .chair3, .chair4 {
+  cursor: pointer;
+}
+
+.chair-writing-wrapper {
+  display: flex;
+  justify-content: space-around;
 }
 
 .chair-writing {
   color: #8D8D8D;
+  font-family: "Gilroy", sans-serif;
   font-size: 1rem;
+}
+
+.chair-title-wrapper {
+  display: flex;
+  justify-content: space-around;
 }
 
 .chair-title {
@@ -216,13 +240,167 @@ h6 {
   font-weight: 600;
 }
 
+.stars-wrapper {
+  display: flex;
+  justify-content: space-around;
+}
+
+.price-tags {
+  display: flex;
+  justify-content: space-around;
+}
+
+.price {
+  display: flex;
+  gap: 3rem;
+}
+
+.plus {
+  cursor: pointer;
+}
+
 .view-all1 {
   margin-top: 8rem;
   display: flex;
   justify-content: center;
-  align-items: center;
   gap: 1rem;
   color: #E58411;
+  font-family: "Gilroy", sans-serif;
   cursor: pointer;
-  font-size: 3rem;
+}
+
+.photo-text-wrapper1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8rem;
+}
+.photo-text-wrapper1 .orange-text {
+  font-family: "Gilroy", sans-serif;
+  color: #E58411;
+  font-size: 1rem;
+}
+.photo-text-wrapper1 h5 {
+  color: #1E1E1E;
+  font-family: "Gilroy", sans-serif;
+  font-size: 2.625rem;
+  margin-top: 1rem;
+}
+.photo-text-wrapper1 .h5-text {
+  color: #1E1E1E;
+  opacity: 0.8;
+  margin-top: 1rem;
+  font-family: "Gilroy", sans-serif;
+}
+
+.photo-wrapper {
+  display: flex;
+  justify-content: flex-end;
+}
+.photo-wrapper .column {
+  display: flex;
+  flex-direction: column;
+}
+
+.photo-text-wrapper2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  flex-direction: row-reverse;
+}
+.photo-text-wrapper2 .orange-text {
+  font-family: "Gilroy", sans-serif;
+  color: #E58411;
+  font-size: 1rem;
+}
+.photo-text-wrapper2 h5 {
+  color: #1E1E1E;
+  font-family: "Gilroy", sans-serif;
+  font-size: 2.625rem;
+  margin-top: 1rem;
+}
+.photo-text-wrapper2 .h5-text {
+  color: #1E1E1E;
+  opacity: 0.8;
+  margin-top: 1rem;
+  font-family: "Gilroy", sans-serif;
+}
+
+.testimonials {
+  margin-top: 5rem;
+}
+.testimonials .orange-text-yet-again {
+  font-family: "Gilroy", sans-serif;
+  color: #E58411;
+  font-size: 1rem;
+  display: flex;
+  justify-self: center;
+}
+.testimonials .h7 {
+  margin-top: 1rem;
+  font-family: "Gilroy", sans-serif;
+  color: #1E1E1E;
+  display: flex;
+  justify-self: center;
+  font-size: 2.625rem;
+}
+
+.Reviews-wrapper {
+  margin-top: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+
+footer .footer-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+footer .cont4 {
+  display: flex;
+  flex-direction: column;
+}
+footer .panto {
+  font-family: "Gilroy", sans-serif;
+  color: #E58411;
+  font-size: 1rem;
+  margin-top: 1rem;
+}
+footer .panto-text {
+  color: #1E1E1E;
+  opacity: 0.8;
+  margin-top: 3rem;
+  font-family: "Gilroy", sans-serif;
+}
+footer #orange {
+  font-family: "Gilroy", sans-serif;
+  color: #E58411;
+  font-size: 1rem;
+}
+footer .orange {
+  font-family: "Gilroy", sans-serif;
+  color: #E58411;
+  font-size: 1rem;
+}
+footer ul {
+  margin-top: 1rem;
+  display: flex;
+  gap: 1rem;
+  flex-direction: column;
+}
+footer li {
+  color: #1E1E1E;
+  opacity: 0.8;
+  font-family: "Gilroy", sans-serif;
+  cursor: pointer;
+  text-decoration: none;
+  transition: -webkit-text-decoration 0.3s ease-in-out;
+  transition: text-decoration 0.3s ease-in-out;
+  transition: text-decoration 0.3s ease-in-out, -webkit-text-decoration 0.3s ease-in-out;
+}
+footer:hover {
+  color: #8D8D8D;
+  text-decoration: underline;
 }/*# sourceMappingURL=furniture.css.map */
